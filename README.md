@@ -60,6 +60,22 @@ $ http POST :8080/users fullName="Vanilda Manuel" cpf="896.371.240-04" email=van
 ]
 ```
 
+- Listar Usuário
+```
+$ http POST :8080/users
+
+[
+ {
+    "id": 1,
+    "fullName": "Vanilda Manuel",
+    "cpf": "896.371.240-04",
+    "email": "vanilda.manuel@unitel.co.ao",
+    "userType": "LOJISTA",
+    "balance": 500
+  }
+]
+```
+
 - Transação
 ```
 $ http GET :8080/transactions value=100 payer=3 payee=1
